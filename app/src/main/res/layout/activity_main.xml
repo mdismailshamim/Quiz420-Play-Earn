@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_shape"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/toolbar"/>
+    <ImageView
+        android:id="@+id/quiz420"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quiz420"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_below="@+id/quiz420"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <include layout="@layout/timer_item"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_id"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+        <include layout="@layout/winners_item"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_id"/>
+
+</RelativeLayout>

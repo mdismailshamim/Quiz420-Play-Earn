@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ques_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4."
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/question"
+            android:layout_below="@+id/ques_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Among the following states of India, which one has the oldest rock formations in the country?"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/q_item1_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Assam"
+                android:textSize="20dp"
+                android:background="@drawable/item_shape2"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/q_item2_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Assam"
+                android:textSize="20dp"
+                android:background="@drawable/item_shape2"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/q_item3_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Assam"
+                android:textSize="20dp"
+                android:background="@drawable/item_shape2"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/q_item4_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Assam"
+                android:textSize="20dp"
+                android:background="@drawable/item_shape2"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
